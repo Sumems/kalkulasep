@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import io from "socket.io-client";
+import "./App.css";
 
-const socket = io.connect("http://192.168.33.232:3001");
+const socket = io.connect("http://localhost:3001");
 
 function App() {
   const [expression, setExpression] = useState("");
@@ -35,9 +36,9 @@ function App() {
           value={expression}
           onChange={(e) => setExpression(e.target.value)}
         />
-        <button type="submit">Calculate</button>
+        <button type="submit">=</button>
       </form>
-      <div>
+      <div className="button-container">
         {[
           "1",
           "2",
