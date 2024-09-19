@@ -2,4 +2,4 @@
 
 "npm install" install it in client folder
 
-"npm i socket.io client" install it in client folder
+"npm i socket.io-client" install it in client folder
